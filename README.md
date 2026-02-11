@@ -3,6 +3,9 @@ A client-side fabric mod which allows you to find stronghold with only one Eye o
 
 Inspired by [Simple Stronghold Finder](https://modrinth.com/mod/simple-stronghold-finder), fixed some bugs and rewritten in Kotlin.
 
+> The name of this module is inspired by the ancient Chinese legend of a sage pointing the way.  
+> 本模组名称灵感来源于中国古代仙人指路传说。
+
 ## Features
 - Find stronghold with only one Eye of Ender.
 - Minecraft 1.21.11 compatible.
