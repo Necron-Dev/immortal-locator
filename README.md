@@ -6,6 +6,7 @@ Inspired by [Simple Stronghold Finder](https://modrinth.com/mod/simple-stronghol
 ## Features
 - Find stronghold with only one Eye of Ender.
 - Minecraft 1.21.11 compatible.
+- I18n supported.
 - A fancy effect when found a stronghold.
 - We love immortal locator so much. (仙定仙定我们喜欢你)
 
