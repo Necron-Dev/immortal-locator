@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "xianding",
+  "version": "${version}",
+  "name": "Immortal Locator",
+  "description": "Locate stronghold with one eye.",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/xianding/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "moe.nec.xianding.client.XiandingClient"
+    ],
+    "main": [
+      "moe.nec.xianding.Xianding"
+    ]
+  },
+  "mixins": [
+    "xianding.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-language-kotlin": ">=${kotlin_loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
