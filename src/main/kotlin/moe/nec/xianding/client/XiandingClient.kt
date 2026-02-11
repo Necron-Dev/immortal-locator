@@ -2,25 +2,20 @@ package moe.nec.xianding.client
 
 import com.google.gson.JsonParser
 import com.mojang.authlib.GameProfile
-import com.mojang.authlib.properties.Property
-import com.mojang.authlib.properties.PropertyMap
 import com.mojang.serialization.JsonOps
 import kotlinx.coroutines.*
 import net.fabricmc.api.ClientModInitializer
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientEntityEvents
 import net.minecraft.ChatFormatting
 import net.minecraft.client.Minecraft
-import net.minecraft.core.component.DataComponentType
 import net.minecraft.core.component.DataComponents
 import net.minecraft.core.particles.ParticleTypes
-import net.minecraft.nbt.CompoundTag
 import net.minecraft.network.chat.ClickEvent
 import net.minecraft.network.chat.Component
 import net.minecraft.network.chat.HoverEvent
 import net.minecraft.sounds.SoundEvents
 import net.minecraft.util.ExtraCodecs
 import net.minecraft.world.entity.EntityType
-import net.minecraft.world.entity.player.PlayerSkin
 import net.minecraft.world.item.ItemStack
 import net.minecraft.world.item.Items
 import net.minecraft.world.item.component.ResolvableProfile
@@ -87,7 +82,10 @@ class XiandingClient : ClientModInitializer {
                         if (finder.isInRing) foundRing = true
                     }
                 }
-                if (!foundRing) return@launch
+                if (!foundRing) {
+                    info("message.xianding.failed_impossible")
+                    return@launch
+                }
 
                 val strongholds = mutableListOf<Stronghold>()
                 while (finder.isInRing) {
@@ -95,7 +93,10 @@ class XiandingClient : ClientModInitializer {
                     if (sh.accuracy > 2) strongholds.add(sh)
                 }
 
-                if (strongholds.isEmpty()) return@launch
+                if (strongholds.isEmpty()) {
+                    info("message.xianding.failed_impossible")
+                    return@launch
+                }
 
                 successEffect()
 

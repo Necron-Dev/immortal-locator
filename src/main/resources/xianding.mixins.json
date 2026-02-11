@@ -1,7 +1,7 @@
 {
-  "required": true,
+  "required": false,
   "minVersion": "0.8",
-  "package": "moe.nec.xianding.mixin",
+  "package": "",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
   ],

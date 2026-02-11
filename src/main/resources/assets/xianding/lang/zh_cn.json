@@ -2,6 +2,7 @@
   "message.xianding.prefix": "§b[仙定] §r",
   "message.xianding.waiting": "仙定正在分析末影之眼轨迹...",
   "message.xianding.failed": "§c仙定已跳脚：轨迹太短或实体已消失。请再试一次。",
+  "message.xianding.failed_impossible": "§c仙定已跳脚：无法定位到有效要塞。请换个地点再试一次。",
   "message.xianding.header": "§l=== 候选末地要塞坐标 ===",
   "message.xianding.result": "§7坐标: §f%1$s, %2$s §8| §c下界: §f%3$s, %4$s §8| §6准确度: §e%5$s",
   "message.xianding.success": "§b感谢使用仙定，仙定祝您 /nw %1$s §b蒸蒸日上！",

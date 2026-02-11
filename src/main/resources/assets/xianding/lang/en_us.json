@@ -2,6 +2,7 @@
   "message.xianding.prefix": "§b[Immortal Locator] §r",
   "message.xianding.waiting": "Analyzing Eye of Ender trajectory, please wait...",
   "message.xianding.failed": "§cLocating failed: Trajectory too short or entity disappeared. Try again.",
+  "message.xianding.failed_impossible": "§cLocating failed: Can't find valid stronghold. Try again at a different location.",
   "message.xianding.header": "§l=== Candidate Stronghold Coordinates ===",
   "message.xianding.result": "§7Pos: §f%1$s, %2$s §8| §cNether: §f%3$s, %4$s §8| §6Accuracy: §e%5$s",
   "message.xianding.success": "§bEnjoy your end life!",
